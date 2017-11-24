@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/praser/form-jsonizer.svg?branch=master)](https://travis-ci.org/praser/form-jsonizer)
+[![Coverage Status](https://coveralls.io/repos/github/praser/form-jsonizer/badge.svg?branch=master)](https://coveralls.io/github/praser/form-jsonizer?branch=master)
+
 ## Synopsis
 
 Some times all you want is a simplier way to transform your html forms in json or js objects. This is what this projet is about.
