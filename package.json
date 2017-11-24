@@ -1,0 +1,43 @@
+{
+  "name": "form-jsonizer",
+  "version": "0.1.0",
+  "description": "Serializes HTML5 forms to JSON",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "build": "babel src --presets babel-preset-env --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praser/form-jsonizer.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "es6",
+    "es2015",
+    "json",
+    "serialization",
+    "from",
+    "html",
+    "html5"
+  ],
+  "author": "Rubens Praser Júnior <praser@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/praser/form-jsonizer/issues"
+  },
+  "homepage": "https://github.com/praser/form-jsonizer#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jsdom": "^11.4.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^4.0.1"
+  }
+}
