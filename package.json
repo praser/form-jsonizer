@@ -1,6 +1,6 @@
 {
   "name": "form-jsonizer",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Serializes HTML5 forms to JSON",
   "main": "./dist/form-jsonizer.min.js",
   "scripts": {
