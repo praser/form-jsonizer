@@ -2,12 +2,14 @@
   "name": "form-jsonizer",
   "version": "0.1.1",
   "description": "Serializes HTML5 forms to JSON",
-  "main": "./dist/index.js",
+  "main": "./dist/form-jsonizer.min.js",
   "scripts": {
-    "test": "mocha --reporter spec",
-    "build": "babel src --presets babel-preset-env --out-dir dist",
+    "build": "npm run transpile && npm run minify",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/test.js",
+    "minify": "node_modules/.bin/uglifyjs dist/form-jsonizer.js -o dist/form-jsonizer.min.js",
     "prepublish": "npm run build",
-    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/test.js"
+    "test": "node_modules/mocha/bin/mocha --reporter spec",
+    "transpile": "babel src --presets babel-preset-env --out-dir dist"
   },
   "repository": {
     "type": "git",

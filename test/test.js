@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const FormJsonizer = require('../src/index.js');
+const FormJsonizer = require('../src/form-jsonizer.js');
 const markup = require('./fixtures/html.js');
 
 document.body.innerHTML = markup;
